@@ -2,8 +2,8 @@
   <div class="card">
     <div class="pars">
       <p id="newsletter-month">{{ month }}</p>
-      <a v-bind:href="linky"
-        ><img id="newsletter-image" v-bind:src="path" />
+      <a :href="linky" download>
+        <img id="newsletter-image" v-bind:src="path" />
       </a>
     </div>
   </div>
@@ -14,7 +14,7 @@ export default {
   props: {
     path: { required: true, type: String },
     month: { required: true, type: String },
-    link: { required: true, type: String },
+    linky: { required: true, type: String },
   },
 };
 </script>

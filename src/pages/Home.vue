@@ -1,10 +1,12 @@
 <template>
   <div>
     <img id="logo_pic" src="../assets/the_28_logo.png" />
+
     <table id="home_table">
       <tr>
         <th class="home_hdr"><p>About Us!</p></th>
       </tr>
+
       <tr>
         <td class="home_par">
           <p id="about-us_par">
@@ -15,6 +17,7 @@
             more!
           </p>
         </td>
+
         <td>
           <img
             id="home_top-pic"
@@ -23,21 +26,20 @@
           />
         </td>
       </tr>
+
       <br />
       <br />
       <br />
       <br />
+
       <tr>
         <th />
         <th class="home_hdr"><p id="home_team-hdr">The Team!</p></th>
       </tr>
+
       <tr>
         <td>
-          <img
-            id="home_bottom-pic"
-            class="home_img"
-            src="../assets/aboutus.jpeg"
-          />
+          <img id="home_bottom-pic" class="home_img" src="../assets/team.jpg" />
         </td>
         <td class="home_par">
           <p id="home_team-par">
@@ -49,8 +51,10 @@
           </p>
         </td>
       </tr>
+
       <br />
       <br />
+
       <tr>
         <td id="home_contact-text">
           Contact out advisor!
@@ -69,24 +73,29 @@
 
         <td id="home_sub-text">
           <div id="sub_div">
-            Do you want to see your work in the next newsletter? Submit your
-            work here!
+            Do you want to see your work in the next newsletter? Email Ms.
+            Orret!
             <br />
             <br />
-            <button class="home_submit" id="home_sub-button">
-              Submit Content!
-            </button>
           </div>
         </td>
       </tr>
     </table>
   </div>
 </template>
+    
 
 <script>
+import App from "/App.vue";
+
 export default {
   name: "home",
   props: {},
+  data() {
+    return {
+      overlay3: false,
+    };
+  },
 };
 </script>
 
@@ -97,5 +106,61 @@ export default {
 .home {
   text-align: center;
   padding: 15px;
+}
+
+.overlay2 {
+  display: flex;
+  flex-direction: column;
+  background-color: #738ee6;
+  border-style: solid;
+  justify-content: center;
+  padding: 50px;
+}
+
+#submit3 {
+  background-color: #69D1B0;
+  font-family: "Dosis", Bold;
+  font-size: 20px;
+  height: 50px;
+  display: block;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  width: 175px;
+}
+
+.alignright {
+  display: flex;
+  justify-content: flex-end;
+}
+.aligncenter {
+  display: flex;
+  justify-content: center;
+}
+
+#attach3 {
+  font-family: "Dosis";
+  background-color: white;
+}
+
+.xbutton {
+  width: 50px;
+  height: 50px;
+  background-color: #738ee6;
+  color: white;
+  font-size: 30px;
+  position: relative;
+  margin-right: -40px;
+  margin-top: -40px;
+}
+
+.overlayspls {
+  position: absolute;
+  z-index: 9000;
+  margin-left: auto;
+  margin-right: auto;
+  left: 50;
+  right: 50;
+  text-align: center;
 }
 </style>

@@ -1,13 +1,18 @@
 <template>
   <div id="why">
-    <h1>Featured Newsletter: A Year Ago This Month!</h1>
+    <h1>This Month's Newsletter: December 2022</h1>
     <p></p>
     <br /><br />
     <div class="layoutline">
       <div class="square">
         <div class="square2">
           <div class="align">
-            <pastnewsletter id="featured" :linky="kk" :path="imgs[3]" />
+            <pastnewsletter
+              id="featured"
+              :linky="newsletters[21]"
+              :path="imgs[21]"
+              month=""
+            />
           </div>
         </div>
       </div>
@@ -17,33 +22,50 @@
     <br /><br />
     <div class="layout">
       <h2 class="year">2022</h2>
+
       <div class="layoutline">
-        <pastnewsletter :linky="kk" :path="imgs[13]" month="feb" />
-        <pastnewsletter :linky="kk" :path="imgs[12]" month="jan" />
+        <pastnewsletter :linky="newsletters[20]" :path="imgs[20]" month="nov" />
+
+        <pastnewsletter :linky="newsletters[19]" :path="imgs[19]" month="oct" />
+        <pastnewsletter :linky="newsletters[18]" :path="imgs[18]" month="sep" />
+      </div>
+
+      <div class="layoutline">
+        <pastnewsletter :linky="newsletters[17]" :path="imgs[17]" month="jun" />
+
+        <pastnewsletter :linky="newsletters[16]" :path="imgs[16]" month="may" />
+        <pastnewsletter :linky="newsletters[15]" :path="imgs[15]" month="apr" />
+      </div>
+
+      <div class="layoutline">
+        <pastnewsletter :linky="newsletters[14]" :path="imgs[14]" month="mar" />
+
+        <pastnewsletter :linky="newsletters[13]" :path="imgs[13]" month="feb" />
+        <pastnewsletter :linky="newsletters[12]" :path="imgs[12]" month="jan" />
       </div>
       <h2 class="year">2021</h2>
       <div class="layoutline">
-        <pastnewsletter :linky="kk" :path="imgs[11]" month="dec" />
-        <pastnewsletter :linky="kk" :path="imgs[10]" month="nov" />
-        <pastnewsletter :linky="kk" :path="imgs[9]" month="oct" />
+        <pastnewsletter :linky="newsletters[11]" :path="imgs[11]" month="dec" />
+        <pastnewsletter :linky="newsletters[10]" :path="imgs[10]" month="nov" />
+        <pastnewsletter :linky="newsletters[9]" :path="imgs[9]" month="oct" />
       </div>
       <div class="layoutline">
-        <pastnewsletter :linky="kk" :path="imgs[8]" month="sep" />
-        <pastnewsletter :linky="kk" :path="imgs[7]" month="jun" />
-        <pastnewsletter :linky="kk" :path="imgs[6]" month="may" />
+        <pastnewsletter :linky="newsletters[8]" :path="imgs[8]" month="sep" />
+        <pastnewsletter :linky="newsletters[7]" :path="imgs[7]" month="jun" />
+        <pastnewsletter :linky="newsletters[6]" :path="imgs[6]" month="may" />
       </div>
       <div class="layoutline">
-        <pastnewsletter :linky="kk" :path="imgs[5]" month="apr" />
-        <pastnewsletter :linky="kk" :path="imgs[4]" month="mar" />
-        <pastnewsletter :linky="kk" :path="imgs[3]" month="feb" />
+        <pastnewsletter :linky="newsletters[5]" :path="imgs[5]" month="apr" />
+        <pastnewsletter :linky="newsletters[4]" :path="imgs[4]" month="mar" />
+        <pastnewsletter :linky="newsletters[3]" :path="imgs[3]" month="feb" />
       </div>
       <div class="layoutline">
-        <pastnewsletter :linky="kk" :path="imgs[2]" month="jan" />
+        <pastnewsletter :linky="newsletters[2]" :path="imgs[2]" month="jan" />
       </div>
       <h2 class="year">2020</h2>
       <div class="layoutline">
-        <pastnewsletter :linky="kk" :path="imgs[1]" month="dec" />
-        <pastnewsletter :linky="kk" :path="imgs[0]" month="nov" />
+        <pastnewsletter :linky="newsletters[1]" :path="imgs[1]" month="dec" />
+        <pastnewsletter :linky="newsletters[0]" :path="imgs[0]" month="nov" />
       </div>
     </div>
     <br />
@@ -71,6 +93,38 @@ export default {
       require("../assets/December2021Cover.png"),
       require("../assets/January2022Cover.png"),
       require("../assets/February2022Cover.png"),
+      require("../assets/March2022Cover.png"),
+      require("../assets/April2022Cover.png"),
+      require("../assets/May2022Cover.png"),
+      require("../assets/June2022Cover.png"),
+      require("../assets/September2022Cover.png"),
+      require("../assets/October2022Cover.png"),
+      require("../assets/November2022Cover.png"),
+      require("../assets/December2022Cover.png"),
+    ],
+    newsletters: [
+      require("../assets/November2020Newsletter.pdf"),
+      require("../assets/December2020Newsletter.pdf"),
+      require("../assets/January2021Newsletter.pdf"),
+      require("../assets/February2021Newsletter.pdf"),
+      require("../assets/March2021Newsletter.pdf"),
+      require("../assets/April2021Newsletter.pdf"),
+      require("../assets/May2021Newsletter.pdf"),
+      require("../assets/June2021Newsletter.pdf"),
+      require("../assets/September2021Newsletter.pdf"),
+      require("../assets/October2021Newsletter.pdf"),
+      require("../assets/November2021Newsletter.pdf"),
+      require("../assets/December2021Newsletter.pdf"),
+      require("../assets/January2022Newsletter.pdf"),
+      require("../assets/February2022Newsletter.pdf"),
+      require("../assets/March2022Newsletter.pdf"),
+      require("../assets/April2022Newsletter.pdf"),
+      require("../assets/May2022Newsletter.pdf"),
+      require("../assets/June2022Newsletter.pdf"),
+      require("../assets/September2022Newsletter.pdf"),
+      require("../assets/October2022Newsletter.pdf"),
+      require("../assets/November2022Newsletter.pdf"),
+      require("../assets/December2022Newsletter.pdf"),
     ],
   }),
   components: {
